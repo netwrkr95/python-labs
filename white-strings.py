@@ -10,4 +10,13 @@ print("Languages:\nPython\nC\nJavaScript")
 #JavaScript
 
 print("Languages:\n\tPython\n\tC\n\tJavaScript")
+#Output
+#Languages:
+#Python
+#C
+#JavaScript
+#Languages:
+#        Python
+#        C
+#        JavaScript
 
