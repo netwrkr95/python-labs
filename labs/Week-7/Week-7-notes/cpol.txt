@@ -1,0 +1,20 @@
+#1 - L2 over IP PMTUD integration capabilities
+
+ABSTRACT - to leverage some way that L2 MTU and L3 MTU can inter-mingle and communicate.
+
+PROBLEM - current challenge in OTV is, that even if the PE can leverage IP MTU for variations in MTU in the WAN, there is no way for the L2 MTU to interpret that setting.  The challenge then is, some form of MTU mismatch with IP MTU.
+
+This is very relevant in the arena now with OTV, as well as VXLAN, L2 LISP, etc...
+
+
+#2 - Application Service Interface (ASI) to ACI
+
+Abstract - to leverage some way to integrate the ACI Health Score into the server or application layer for a more extended level of monitoring and health score for end to end applications
+
+Problem - current health score in ACI is up to either the demarc of:
+A)  the p/v port on the leaf
+B)  AVS when it gets supported
+
+This still presents a challenge as there is no understanding of ACI as it relates to the health score being extended to the server (p/v) and/or application.
+
+Claim - to create a "shim", similar to what MSI does in Medianet, that allows some form of application interpretation up to the server layer of the end to end application tier within ACI.  This concept would allow a certain level deeper of "application" performance into the overall health score.  What is needed is this ACI shim to enhance the view and performance characteristics into the VM or TCP or application layer.  This would create a more detailed extended end 2 end health score for the application.
