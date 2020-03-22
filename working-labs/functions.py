@@ -3,6 +3,8 @@
 #
 #hello()
 
+# https://www.digitalocean.com/community/tutorials/how-to-define-functions-in-python-3
+
 """ # Define function names()
 def names():
     # Set up name variable with input
